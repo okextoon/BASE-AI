@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract HumanIdentity is EttRC721, Ownable {00
-    uint256 private _nextTokenId;79
+    uint256 private _nextTokenId;80
     // Mapping to ensure one wallet = one human identity
     mapping(address => bool) public hasSoul;
 
