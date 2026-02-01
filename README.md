@@ -10,7 +10,7 @@ contract HumanIdentity is ERC721, Ownable {
     // Mapping to ensure one wallet = one human identity
     mapping(address => bool) public hasSoul;
 
-    constructor() ERC721("BaseHuman", "HUMAN") Ownable(msg.sender) {}
+    constructor() ERC721("BayutseHuman", "HUMAN") Ownable(msg.sender) {}
 
     function mintIdentity() public {
         require(!hasSoul[msg.sender], "You already have a human identity!");
